@@ -34,7 +34,7 @@ build() {
 }
 
 package() {
-  depends+=('python-astral' 'python-tzlocal' 'python-schedule')
+  depends+=('python-astral' 'python-tzlocal' 'python-schedule' 'python-pytz')
   cd "${srcdir}/${_name}-${pkgver}"
   python setup.py install --root="${pkgdir}" --optimize=1 --skip-build
   install -Dm644 -t ${pkgdir}/usr/lib/systemd/user ${srcdir}/${pkgname}.service ${srcdir}/${pkgname}.timer

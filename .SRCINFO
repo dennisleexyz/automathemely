@@ -25,4 +25,4 @@ pkgname = automathemely
 	depends = python-astral
 	depends = python-tzlocal
 	depends = python-schedule
-
+	depends = python-pytz
